@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>HOME</title>
+        <link rel="stylesheet" href="geeks.css" title="navbar" type="text/css" />
+        <style type="text/css" media="all">
+            .Tagline {
+                padding: 20px;
+                width: 90%;
+                height: 9%;
+                border-radius: 25px;
+                border:5px solid #A7C7E7;
+                background-color: white;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+            input {
+                width: 75px;
+                float: left;
+                shape-outside: Circle (50%);
+            }
+            h1 {
+                font-style: italic;
+                font-size: 50px;
+                font-family: helvetica;
+            }
+            a {color: #1b80b7; transition: all 4s linear; }
+            a:hover{color: #52bff2;}
+            .Trends {float: right; background-color: white; border-radius: 25px; width: 550px}
+            
+            blockquote {
+                margin-right: 45%;
+                margin-left: 0%;
+                align-content: left;
+            }
+            
+            *{
+                box-sizing: border-box;
+            }
+            .container {
+                position: relative;
+            }
+            .mySlides{
+                display: none;
+                
+            }
+            
+            .cursor{
+                cursor: pointer;
+            }
+            .prev,
+            .next{
+                cursor: pointer;
+                position: 40%;
+                top: 40%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px;
+                
+            }
+            .prev:hover,
+            .next:hover{
+                background-color: rgba(0,0,0,0.8);
+            }
+            .numbertext{
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .caption-container{
+                text-align: center;
+                background-color: #222;
+                padding: 2px 16px;
+                color:white;
+                
+            }
+            .row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column{
+                float: left;
+                width: 16.66%;
+            }
+            .demo{
+                opacity: 0.6;
+            }
+            .active,
+            demo:hover{
+                opacity: 1;
+            }
+            
+        </style>
+        <script type="text/javascript" charset="utf-8">
+        var slideIndex= 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex+=n);
+        }
+        function showSlides(n){
+            showSlides(slideIndex=n)
+        }
+        function showSlides(n){
+            var i;
+            var slides= document.getElementsByClassName("mySlides");
+            var dots= document.getElementsByClassName("demo");
+            var captionText= document.getElementById("caption");
+            if(n > slides.length) {slideIndex= 1}
+            if(n < 1) {slideIndex= slides.length}
+            for(i= 0; i<dots.length; i++)
+            {
+                dots[i].className= dots[i].className.replace("active","");
+                
+            }
+            slides[slideIndex -1].display="block"; 
+            dots[slideIndex -1].className+="active";
+            captionText.innerHTML= dots[sliddIndex -1].alt;
+        }
+        
+        </script>
+        
+    </head>
+    <body style="background-color: #89CFF0">
+        <div class="Tagline">
+            <input type="image" name="Owino Online" id="Owino Online" src="OwinoLogo.jpeg" alt="Owino Logo" width="75px"; height="100px"/>
+            <header class="CompanyName">
+                <h1> <a class="NameX1" href="HomePageOne.html">Owino Online </a></h1>
+                <h2>Rewinding Quality</h2>
+            </header>
+            
+        </div>
+        <h2> <b>Latest Fashion </b></h2>
+        <div>
+            <div class="Trends">
+                <h3>Stay Safe!</h3>
+                <p > We want you healthy and safe. We have curated packages for your Safety  <a href="News.html">here</a></p>
+                <img src="Masks20.jpg" alt="Masks" width="100%" />
+                
+                
+                
+            </div>
+            <h3 class="Conduct">
+                <a href="#">Why Owino?</a>
+            </h3>
+            <blockquote>
+                More than 60 per cent of all second hand textile and fabrics in Uganda is traded from St. Balikudembe market, alias Owino Market. With an online access to the Market, we have hope that the market can move beyond borders. <a href="News.html">Learn more.</a>
+            </blockquote>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <br />
+        <hr /> 
+        <br /> 
+        <section class="CatalogOne">
+            <h3>Our Collection</h3>
+            <div class="mySlides">
+                <div class="numbertext">
+                    1/5
+                </div>
+                <img src="3DOne.jpg" alt="Men's pants" style="width: 100%;" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">
+                    2/5
+                </div>
+                <img src="CapOne.jpg" alt="Colored Caps" style="width: 100%"/>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">
+                    3/5
+                </div>
+                <img src="LingerieOne.jpg" alt="Night Dress" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">
+                    4/5
+                </div>
+                <img src="NeckOne.jpg" alt="Round Neck Dress" />
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">
+                    5/5
+                </div>
+                <img src="SummerOne.jpg" alt="Red Summer Dress" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">
+                &#10094;
+            </a>
+            <a class="next" onclick="plusSlides(1)">
+                &#10095;
+            </a>
+            <div class="caption-container">
+                <p id="caption">
+                    
+                </p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="3DOne.jpg" alt="Men's pants" style="width: 100%" onclick="currentSlide(1)"/>
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="CapOne.jpg" onclick="currentSlide(2) "alt="Caps" style=" width: 100% "/>
+                </div>
+                
+                <div class="column">
+                    <img class="demo cursor" src="LingerieOne.jpg" alt="Night Dress"  style="width: 100%" onclick="currentSlide(3)"/>
+                    
+                </div>
+                
+                <div class="column">
+                    <img class="demo cursor" src="NeckOne.jpg" alt="Round Neck Dress"  style="width: 100%" onclick="currentSlide(4)"/>
+                    
+                </div>
+                
+                <div class="column">
+                    <img class="demo cursor" src="SummerOne.jpg" alt="Red Summer Dress" style="width: 100%" onclick="currentSlide(5)"/>
+                    
+                </div>
+                
+                
+                
+            </div>
+        </section>
+        
+        <div class="navbar">
+            <a href="HomePageOne.html" class="active">HOME</a>
+            <a href="Services.html">SERVICES</a>
+            <a href="News.html">UPDATES</a>
+            <a href="ContactUs.html">CONTACT</a>
+            <a href="AboutUs.html">ABOUT</a>
+            
+            
+        </div>
+    </body>
+</html>
