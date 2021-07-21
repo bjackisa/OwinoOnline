@@ -1,8 +1,9 @@
 .navbar{
     background-color: blue;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     width: 100%;
+    padding: 10px;
 }
 .navbar a{
     float: left;
